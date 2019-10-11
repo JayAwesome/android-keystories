@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="?attr/backgroundColor"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="invisible">
+        android:visibility="invisible"
+        android:background="?attr/backgroundColor">
 
         <TextView
             android:id="@+id/reg_txt_view"
@@ -36,9 +37,10 @@
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:hint="Full Name"
-
+            android:background="?attr/backgroundColor"
             android:inputType="textPersonName"
-            android:textColorHint="#000000" />
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor"/>
 
         <EditText
             android:id="@+id/reg_email"
@@ -51,7 +53,8 @@
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/colorBlack" />
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor" />
 
         <EditText
             android:id="@+id/reg_contact"
@@ -64,7 +67,8 @@
             android:ems="10"
             android:hint="Phone No"
             android:inputType="phone"
-            android:textColorHint="@color/colorBlack" />
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor" />
 
         <EditText
             android:id="@+id/reg_password"
@@ -77,7 +81,8 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="@color/colorBlack" />
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor" />
 
         <EditText
             android:id="@+id/reg_confirm_password"
@@ -90,7 +95,8 @@
             android:ems="10"
             android:hint="Confirm password"
             android:inputType="textPassword"
-            android:textColorHint="#000000" />
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor" />
 
         <Button
             android:id="@+id/reg_facebook"
@@ -110,7 +116,7 @@
             android:text="facebook"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="#000000"
+            android:textColor="?attr/textColor"
             android:textSize="14sp" />
 
         <Button
@@ -131,7 +137,7 @@
             android:paddingEnd="30dp"
             android:text="Google"
             android:textAllCaps="false"
-            android:textColor="#000000"
+            android:textColor="?attr/textColor"
             android:textSize="14sp" />
 
         <Button

@@ -8,7 +8,7 @@
                 android:bottomRightRadius="120dp"
                 android:radius="120dp"/>
                 <solid
-                    android:color="#ffffff"/>
+                    android:color="?attr/backgroundColor"/>
                     <stroke
                         android:color="#3f9ff7"
                         android:width="2dp"/>

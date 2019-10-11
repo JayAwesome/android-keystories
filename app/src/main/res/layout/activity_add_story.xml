@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".AddStoryActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorWhite"
+        android:background="?attr/backgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,11 +22,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="?attr/backgroundColor">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
 
             <TextView
                 android:id="@+id/add_story_label"
@@ -62,7 +65,7 @@
                 android:paddingTop="12dp"
                 android:paddingEnd="12dp"
                 android:paddingBottom="12dp"
-                android:textColor="@color/main_color_grey_800"
+                android:textColor="?attr/textColor"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toTopOf="@+id/author_edt"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +88,7 @@
                 android:paddingTop="12dp"
                 android:paddingEnd="12dp"
                 android:paddingBottom="12dp"
-                android:textColor="@color/main_color_grey_800"
+                android:textColor="?attr/textColor"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="@+id/title_edt"
@@ -101,7 +104,7 @@
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="Content"
-                android:textColor="@color/main_color_grey_800"
+                android:textColor="?attr/textColor"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@+id/story_edt"
                 app:layout_constraintStart_toStartOf="@+id/author_edt" />
@@ -124,7 +127,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="8dp"
-                android:textColor="@color/main_color_grey_800"
+                android:textColor="?attr/textColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/button_donate"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -176,6 +179,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="8dp"
+                    android:textColor="?attr/textColor"
                     android:hint="No image uploaded"
                     android:textSize="12sp" />
             </LinearLayout>
