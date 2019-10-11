@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnBoardingActivity"
-    android:background="#ffffff">
+    android:background="?attr/backgroundColor">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/onbaord_viewpager"
@@ -13,6 +13,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
+        android:background="?attr/backgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
