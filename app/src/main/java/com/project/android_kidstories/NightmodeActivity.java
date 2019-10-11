@@ -15,7 +15,7 @@ import com.project.android_kidstories.R;
 
 public class NightmodeActivity extends AppCompatActivity {
     private Switch nightswitch;
-
+//    This is supposed to change the view of the app from Light to Dark mode.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
